@@ -1,0 +1,19 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<!-- url에 password가 노출되어 있다
+이는 url방식이 아닌 post방식으로 전달해야한다 -->
+<!-- 간략하게 말해서 form을 이용해서 정보를 전달할 때는
+post방식으로 전달하면 된다 -->
+    <form action="http://localhost/method.php" method="POST">
+        <input type="text" name="id" value="아이디">
+        <input type="password" name="pwd" value="비밀번호">
+        <input type="submit" value="비밀보장">
+    </form>
+</body>
+</html>
